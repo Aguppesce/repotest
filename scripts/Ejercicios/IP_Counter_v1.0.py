@@ -14,7 +14,7 @@ def main():
 		response = requests.get(url)
 		response.raise_for_status() #Verifica si hubo error HTTP
 
-		#Expresión regular para encontrar IPs
+		# Expresión regular para encontrar IPs
 		ip_pattern = r'\b(?:\d{1,3}\.){3}\d{1,3}\b'
 		ip_counter = defaultdict(int)
 
